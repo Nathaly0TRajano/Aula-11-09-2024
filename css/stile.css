@@ -1,0 +1,82 @@
+/* Estilo para o fundo da página*/
+/*Sem o ponto ele mexe direto na tag*/
+body {
+    background-color: #f0f0f0; /*Define a cor da página/ o que está no body*/
+    font-family: Arial, sans-serif; /*Define a fonte de tudo o que etá dentro do body*/
+    display: flex; /*Define que vamos trabalhar com flexbox */
+    flex-direction: column; /*Coloca o flexbox em forma de coluna*/
+    justify-content: center; /**/
+    align-items: center; /**/
+    height: 100vh; /**/
+    margin: 0; /**/
+}
+
+/*Quando queremos fazer uma classe iniciamos com ponto.*/
+.logo {
+    margin-bottom: 20px;
+}
+.logo img {
+    max-width: 150px;
+    height: auto; /*Pega altura altomatica do navergador*/
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"]{
+    padding: 10px;
+    margin: 5px 0; /*O cinco */
+    border: 1px solid #ccc; /*Borda em forma de linha*/
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/**/
+
+/*Todos os submit vão receber o estilo abaixo*/
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white; /*Entende que aqui quer mudar a cor da letra*/
+    border:none; /*Tira a borda*/
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover{
+    background-color: #45a049;
+
+}
+
+button {
+    background-color: red;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #f10000;
+}
